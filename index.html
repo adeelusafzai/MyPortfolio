@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Adeel Yousafzai — Full Stack Engineer</title>
+<meta name="description" content="Full Stack Engineer building TypeScript, React, Node.js and PostgreSQL products end to end — client, server, service, and database." />
+<link rel="canonical" href="https://adeelyousafzai.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Adeel Yousafzai — Full Stack Engineer" />
+<meta property="og:description" content="Full Stack Engineer building TypeScript, React, Node.js and PostgreSQL products end to end." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b2430'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='19' font-weight='700' fill='%23c98a2b' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+  // Applied before first paint so the page never flashes the wrong theme.
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark' || saved === 'light') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (e) { /* storage blocked - fall back to prefers-color-scheme */ }
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">Adeel<span>.</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/>
+      </svg>
+    </button>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ───────────────────────────── HERO ───────────────────────────── -->
+  <section class="hero grid-bg">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Adeel Yousafzai</p>
+        <h1>I build full&#8209;stack products, from the database up to the browser.</h1>
+        <p class="lede">
+          Full Stack Engineer at Zapply, shipping features end to end in TypeScript, React,
+          Node.js and Express on PostgreSQL — client, server, service, and database.
+          5+ years across SaaS, SIEM platform integrations, and FinTech payment systems.
+          Software Engineering graduate, COMSATS University Islamabad.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-solid" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 600 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+            <!-- client plate -->
+            <g>
+              <polygon points="300,20 440,90 300,160 160,90" fill="none"/>
+              <path d="M160 90v14l140 70v-14"/>
+              <path d="M300 160v14l140-70V90"/>
+              <polygon points="262,74 302,94 262,114 222,94" fill="none" stroke-width="1.1"/>
+              <polygon points="342,96 372,111 342,126 312,111" fill="none" stroke-width="1.1"/>
+              <path d="M232 116l40 20M252 126l40 20" stroke-width="1.1"/>
+            </g>
+            <!-- service plate -->
+            <g>
+              <polygon points="300,190 440,260 300,330 160,260" fill="none"/>
+              <path d="M160 260v14l140 70v-14"/>
+              <path d="M300 330v14l140-70v-14"/>
+              <path d="M212 260l88 44M240 246l88 44M268 232l88 44" stroke-width="1.1"/>
+            </g>
+            <!-- data plate -->
+            <g>
+              <polygon points="300,360 440,430 300,500 160,430" fill="none"/>
+              <path d="M160 430v14l140 70v-14"/>
+              <path d="M300 500v14l140-70v-14"/>
+              <g stroke-width="1.1">
+                <polygon points="300,398 330,413 300,428 270,413" fill="none"/>
+                <polygon points="262,420 292,435 262,450 232,435" fill="none"/>
+                <polygon points="338,420 368,435 338,450 308,435" fill="none"/>
+              </g>
+            </g>
+            <!-- connectors -->
+            <path d="M300 174v16M300 344v16" stroke-dasharray="5 5"/>
+            <circle cx="300" cy="182" r="2.6" fill="currentColor" stroke="none"/>
+            <circle cx="300" cy="352" r="2.6" fill="currentColor" stroke="none"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── SERVICES ─────────────────────────── -->
+  <section class="section section-alt" id="services">
+    <div class="wrap">
+      <h2 class="section-title">Services</h2>
+      <div class="card-grid three">
+
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="2.5" y="4" width="19" height="14" rx="1.5"/><path d="M2.5 8h19"/><circle cx="5.5" cy="6" r=".6" fill="currentColor"/><circle cx="7.7" cy="6" r=".6" fill="currentColor"/><path d="M8 21h8"/><path d="M12 18v3"/>
+          </svg>
+          <h3>Full Stack Web Development</h3>
+          <p>Responsive applications owned end to end: function-based React components, hooks and tests on the front, Express services and business logic behind them.</p>
+          <ul class="chips">
+            <li>TypeScript</li><li>React</li><li>Node.js</li><li>Express</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="2.5" y="3.5" width="19" height="6" rx="1.5"/><rect x="2.5" y="14.5" width="19" height="6" rx="1.5"/><path d="M6 6.5h.01M6 17.5h.01" stroke-width="2" stroke-linecap="round"/><path d="M12 9.5v5"/>
+          </svg>
+          <h3>API &amp; Backend Engineering</h3>
+          <p>Scalable, secure server-side services and REST APIs — versioning, JWT and OAuth2 auth, third-party integrations, and async pipelines for the heavy work.</p>
+          <ul class="chips">
+            <li>REST APIs</li><li>FastAPI</li><li>Django</li><li>Celery</li><li>Kafka</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <ellipse cx="12" cy="5.5" rx="7.5" ry="3"/><path d="M4.5 5.5v13c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3v-13"/><path d="M4.5 12c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3"/>
+          </svg>
+          <h3>Database &amp; Data Layer</h3>
+          <p>Schema and data modelling, stored procedures, and query optimisation across relational and document stores — with profiling and tuning when things get slow.</p>
+          <ul class="chips">
+            <li>PostgreSQL</li><li>SQL Server</li><li>MongoDB</li><li>Redis</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── WORK ───────────────────────────── -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <h2 class="section-title">Work</h2>
+      <p class="section-lede">Selected projects — a full-stack platform in active build, plus production systems delivered for clients.</p>
+
+      <div class="card-grid two">
+
+        <article class="card project">
+          <div class="project-head">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M3 13l1.6-4.6A2 2 0 0 1 6.5 7h11a2 2 0 0 1 1.9 1.4L21 13"/><path d="M3 13h18v4H3z"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/>
+            </svg>
+            <h3>CarPool</h3>
+          </div>
+          <p class="project-meta">Personal project · 2026 — Present</p>
+          <p>A full-stack carpooling platform: drivers post rides with seats, route and time; passengers search and request bookings; driver identity is verified before anyone can post, with an admin panel for moderation.</p>
+          <ul class="chips mono">
+            <li>React 19</li><li>Vite</li><li>Express 5</li><li>PostgreSQL</li><li>Prisma</li><li>Zod</li><li>JWT</li><li>Cloudflare R2</li>
+          </ul>
+          <details class="notes">
+            <summary>Build notes</summary>
+            <div class="note"><h4>Challenge</h4><p>A two-sided marketplace with a trust problem baked in: anyone can claim to be a driver, and a naive booking flow lets two passengers grab the same last seat at once. Three genuinely different permission levels — passenger, driver, admin — risked turning every route into a tangle of <code>if</code> checks.</p></div>
+            <div class="note"><h4>Approach</h4><p>Modelled roles as capability checks rather than identity checks, so a driver is a superset of a passenger rather than a sibling role. Driver verification lives in its own state machine, separate from the account role, so an application can be reviewed without granting access early. The booking race is closed with a single conditional update guarded on available seats instead of a read-then-write — a classic TOCTOU bug turned into an atomic compare-and-set. Licences, registrations and car photos are split across public and private object storage, so sensitive ID documents are never served from an open URL.</p></div>
+            <div class="note"><h4>Result</h4><p>In active development — auth, ride posting and the role model are in; bookings, driver verification and the admin panel are in progress.</p></div>
+          </details>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 9.5h19"/><path d="M6 15h4"/>
+            </svg>
+            <h3>FinTech Payment Gateway Platform</h3>
+          </div>
+          <p class="project-meta">TechOrient Technologies · Jan 2021 — Mar 2021</p>
+          <p>A secure payment backend handling transaction processing, gateway integration and high-volume reporting for a FinTech client.</p>
+          <ul class="chips mono">
+            <li>C# ASP.NET MVC</li><li>Entity Framework</li><li>SQL Server</li><li>REST APIs</li><li>JWT / OAuth2</li>
+          </ul>
+          <details class="notes">
+            <summary>Build notes</summary>
+            <div class="note"><h4>Challenge</h4><p>Money moving through third-party gateways leaves no room for silent failure: every transaction needed to be traceable, every integration secured, and reporting had to stay fast as the transaction log grew.</p></div>
+            <div class="note"><h4>Approach</h4><p>Built the backend services in C# ASP.NET MVC with Entity Framework for transaction processing and validation, integrated third-party payment gateways over RESTful APIs secured with JWT, OAuth2 and SSL/TLS, and pushed high-volume logging and reporting into SQL Server stored procedures with indexed queries.</p></div>
+            <div class="note"><h4>Result</h4><p>A payment platform backend with robust exception handling, audit logging and data encryption throughout, following FinTech security practice.</p></div>
+          </details>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M3 20V10M9 20V4M15 20v-7M21 20v-4"/><path d="M2 20h20"/>
+            </svg>
+            <h3>Employee Activity Monitoring</h3>
+          </div>
+          <p class="project-meta">Client project · 2020 — 2021</p>
+          <p>A web platform that logs employee activity in real time and enforces compliance, with dashboard reporting over a high-volume audit trail.</p>
+          <ul class="chips mono">
+            <li>C# ASP.NET MVC</li><li>Web API</li><li>Entity Framework</li><li>SQL Server</li>
+          </ul>
+          <details class="notes">
+            <summary>Build notes</summary>
+            <div class="note"><h4>Challenge</h4><p>Compliance auditing is only useful if the record is complete and queryable — which means writing a lot of events quickly, then reading across them without the dashboard grinding to a halt.</p></div>
+            <div class="note"><h4>Approach</h4><p>Real-time activity logging through an ASP.NET MVC and Web API stack on Entity Framework, with SQL Server schemas designed around stored procedures and indexed queries for the audit-log volume. APIs were secured with JWT and role-based authorisation.</p></div>
+            <div class="note"><h4>Result</h4><p>Shipped dashboard reporting the client used to reduce compliance violations.</p></div>
+          </details>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 6h16v11H4z"/><path d="M9 20h6"/><path d="M12 17v3"/><path d="M8 11.5l2.5 2 5-4.5"/>
+            </svg>
+            <h3>Quick Cricket</h3>
+          </div>
+          <p class="project-meta">Final year project · Fall 2020 — Fall 2021</p>
+          <p>An ML-powered highlight generator for cricket matches: match recordings are processed and segmented automatically using on-screen score detection.</p>
+          <ul class="chips mono">
+            <li>Python</li><li>PyQt5</li><li>Tesseract OCR</li><li>Genetic Algorithm</li><li>pandas</li><li>NumPy</li>
+          </ul>
+          <details class="notes">
+            <summary>Build notes</summary>
+            <div class="note"><h4>Challenge</h4><p>Cricket broadcasts carry no structured event feed — the only reliable signal for "something happened" is the scoreboard burned into the frame.</p></div>
+            <div class="note"><h4>Approach</h4><p>Ran OCR over sampled frames to read the live score, then used score deltas as segmentation boundaries, with a genetic algorithm tuning the selection of clips. Wrapped it in a PyQt5 desktop interface.</p></div>
+            <div class="note"><h4>Result</h4><p>Automatic highlight reels generated from full match recordings without manual tagging.</p></div>
+          </details>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="M16.2 16.2L21 21"/><path d="M4.5 9.5h13M4.5 13h13"/>
+            </svg>
+            <h3>Web Scraper Automation</h3>
+          </div>
+          <p class="project-meta">Tooling · 2021</p>
+          <p>Scraping tools that log into secure portals, parse dynamic tables and export structured data for downstream reporting.</p>
+          <ul class="chips mono">
+            <li>Python</li><li>Selenium</li><li>BeautifulSoup</li><li>pandas</li><li>SQLite</li>
+          </ul>
+          <details class="notes">
+            <summary>Build notes</summary>
+            <div class="note"><h4>Challenge</h4><p>The data sat behind authenticated portals with tables rendered client-side, so a plain HTTP fetch returned nothing useful.</p></div>
+            <div class="note"><h4>Approach</h4><p>Automated the login flows with Selenium to reach the rendered DOM, parsed structured HTML with BeautifulSoup, and exported through pandas with SQLite for local storage between runs.</p></div>
+            <div class="note"><h4>Result</h4><p>A repeatable extraction pipeline replacing manual copy-paste from the portals.</p></div>
+          </details>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── EXPERIENCE ───────────────────────── -->
+  <section class="section section-alt" id="experience">
+    <div class="wrap">
+      <h2 class="section-title">Experience</h2>
+
+      <ol class="timeline">
+
+        <li class="tl-row">
+          <div class="tl-date">Sept 2025 — Present</div>
+          <div class="tl-role">
+            <h3>Full Stack Engineer</h3>
+            <p>Zapply — United States (Remote)</p>
+          </div>
+          <div class="tl-body">
+            <p>Own features across client, server, service and database in TypeScript, React, Node.js and Express — function-based components, hooks and tests on the front end; REST APIs, data models and business logic on the back.</p>
+            <p>Design and optimise PostgreSQL schemas and queries, implement secure JWT authentication, integrate third-party services, and review code in a remote-first, cross-functional team.</p>
+          </div>
+        </li>
+
+        <li class="tl-row">
+          <div class="tl-date">May 2022 — Sept 2025</div>
+          <div class="tl-role">
+            <h3>Backend Software Engineer</h3>
+            <p>YottaByte / Calian — Canada (Remote)</p>
+          </div>
+          <div class="tl-body">
+            <p>Built and maintained scalable, secure server-side services and REST APIs in Python (FastAPI, Django) and Node.js powering SIEM platform integrations, with data pipelines on Celery, Redis and Kafka for asynchronous processing.</p>
+            <p>Handled data modelling and query optimisation across PostgreSQL, SQL Server and MongoDB, profiled and tuned performance issues, and deployed to containerised cloud environments with Docker, Kubernetes and CI/CD.</p>
+          </div>
+        </li>
+
+        <li class="tl-row">
+          <div class="tl-date">Jan 2021 — Apr 2022</div>
+          <div class="tl-role">
+            <h3>.NET Full Stack Engineer</h3>
+            <p>TechOrient Technologies FZCO — UAE (Remote)</p>
+          </div>
+          <div class="tl-body">
+            <p>Built FinTech applications from scratch in C# ASP.NET Core / MVC with Entity Framework Core — payment platform backends, RESTful Web APIs and front-end modules — secured with JWT, OAuth2 and SSL/TLS.</p>
+            <p>Applied Clean Architecture and dependency injection for modular, testable components, optimised SQL Server schemas and T-SQL stored procedures, and refactored legacy applications while keeping backward compatibility.</p>
+          </div>
+        </li>
+
+      </ol>
+
+      <div class="edu">
+        <h3>Education</h3>
+        <p><strong>B.S.E, Software Engineering</strong> — COMSATS University Islamabad, Pakistan · 2021</p>
+      </div>
+
+      <div class="skills">
+        <h3>Technical Skills</h3>
+        <dl class="skill-list">
+          <div><dt>Frontend</dt><dd>TypeScript · JavaScript · React · Hooks · Responsive UI · Bootstrap</dd></div>
+          <div><dt>Backend</dt><dd>Node.js · Express · REST APIs · Microservices · C# .NET · Python</dd></div>
+          <div><dt>Databases</dt><dd>PostgreSQL · SQL Server · MongoDB · Redis · Query Optimisation</dd></div>
+          <div><dt>Testing</dt><dd>Jest · Mocha · React Testing Library · pytest</dd></div>
+          <div><dt>Cloud &amp; DevOps</dt><dd>AWS · Azure · Docker · Kubernetes · CI/CD · GitHub Actions</dd></div>
+          <div><dt>Practices</dt><dd>Code Reviews · Remote-First Collaboration · Agile / Scrum · SDLC</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── CONTACT ──────────────────────────── -->
+  <section class="section contact grid-bg" id="contact">
+    <div class="wrap contact-inner">
+      <div>
+        <h2 class="contact-title">Let's talk about full-stack work.</h2>
+        <p class="lede">Open to full-stack and backend engineering roles, freelance, and contract work. Happy to talk about the projects above, or anything else.</p>
+        <a class="btn btn-solid" href="mailto:adeelusafzai@outlook.com">Send an email</a>
+      </div>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:adeelusafzai@outlook.com">adeelusafzai@outlook.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/adeelusafzai" target="_blank" rel="noopener">github.com/adeelusafzai</a></li>
+        <li><span>LinkedIn</span><a href="https://linkedin.com/in/adeelusafzai" target="_blank" rel="noopener">linkedin.com/in/adeelusafzai</a></li>
+        <li><span>Location</span><a href="#contact">Islamabad, Pakistan</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a class="logo logo-lg" href="#top">Adeel<span>.</span></a>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+    </div>
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <a href="https://github.com/adeelusafzai" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/adeelusafzai" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:adeelusafzai@outlook.com">Email</a>
+    </div>
+    <p class="copy">© <span id="year">2026</span> Adeel Yousafzai.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
