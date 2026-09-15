@@ -69,10 +69,11 @@
         <p class="eyebrow">Adeel Yousafzai</p>
         <h1>I build full&#8209;stack products, from the database up to the browser.</h1>
         <p class="lede">
-          Full Stack Engineer at Zapply, shipping features end to end in TypeScript, React,
-          Node.js and Express on PostgreSQL — client, server, service, and database.
-          5+ years across SaaS, SIEM platform integrations, and FinTech payment systems.
-          Software Engineering graduate, COMSATS University Islamabad.
+          Full Stack Engineer with 5+ years building high-quality, responsive web applications —
+          fully owning features across client, server, service, and database in TypeScript, React,
+          Node.js and Express on PostgreSQL. Experience spans remote-first SaaS, SIEM platform
+          integrations, and FinTech payment systems, with REST APIs, microservices and Docker
+          throughout. Software Engineering graduate, COMSATS University Islamabad.
         </p>
         <div class="btn-row">
           <a class="btn btn-solid" href="#work">See the work</a>
@@ -120,6 +121,23 @@
     </div>
   </section>
 
+  <!-- ─────────────────────────── APPROACH ─────────────────────────── -->
+  <section class="section approach">
+    <div class="wrap approach-inner">
+      <p class="eyebrow">How I build</p>
+      <p class="approach-text">
+        I own systems end to end, front end to deployment, with a focus on reliability,
+        efficiency, and scale. I decide when to break a system into microservices, connect
+        them through message queues, and use caching and query tuning to keep things fast.
+        When growth demands it, I choose between scaling vertically or horizontally, based on
+        what the system actually needs. I also design for failure, using retries, fallbacks,
+        and monitoring so problems in production get caught and handled before they become
+        outages. At the end of the day, good system design means building something that
+        still holds up on a Friday evening, when no one is around to firefight it.
+      </p>
+    </div>
+  </section>
+
   <!-- ─────────────────────────── SERVICES ─────────────────────────── -->
   <section class="section section-alt" id="services">
     <div class="wrap">
@@ -142,9 +160,9 @@
             <rect x="2.5" y="3.5" width="19" height="6" rx="1.5"/><rect x="2.5" y="14.5" width="19" height="6" rx="1.5"/><path d="M6 6.5h.01M6 17.5h.01" stroke-width="2" stroke-linecap="round"/><path d="M12 9.5v5"/>
           </svg>
           <h3>API &amp; Backend Engineering</h3>
-          <p>Scalable, secure server-side services and REST APIs — versioning, JWT and OAuth2 auth, third-party integrations, and async pipelines for the heavy work.</p>
+          <p>Scalable, secure server-side services and REST APIs — versioning, JWT and OAuth2 auth, third-party integrations, async pipelines for the heavy work, and cloud infrastructure to run it all on.</p>
           <ul class="chips">
-            <li>REST APIs</li><li>FastAPI</li><li>Django</li><li>Celery</li><li>Kafka</li>
+            <li>REST APIs</li><li>Node.js</li><li>FastAPI</li><li>Django</li><li>PostgreSQL</li><li>Celery</li><li>Kafka</li><li>AWS</li><li>S3</li><li>Lambda</li><li>Docker</li><li>Kubernetes</li>
           </ul>
         </article>
 
@@ -188,6 +206,46 @@
             <div class="note"><h4>Challenge</h4><p>A two-sided marketplace with a trust problem baked in: anyone can claim to be a driver, and a naive booking flow lets two passengers grab the same last seat at once. Three genuinely different permission levels — passenger, driver, admin — risked turning every route into a tangle of <code>if</code> checks.</p></div>
             <div class="note"><h4>Approach</h4><p>Modelled roles as capability checks rather than identity checks, so a driver is a superset of a passenger rather than a sibling role. Driver verification lives in its own state machine, separate from the account role, so an application can be reviewed without granting access early. The booking race is closed with a single conditional update guarded on available seats instead of a read-then-write — a classic TOCTOU bug turned into an atomic compare-and-set. Licences, registrations and car photos are split across public and private object storage, so sensitive ID documents are never served from an open URL.</p></div>
             <div class="note"><h4>Result</h4><p>In active development — auth, ride posting and the role model are in; bookings, driver verification and the admin panel are in progress.</p></div>
+          </details>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M17.5 10v3.5M17.5 13.5h-4M13.5 13.5v4.5"/>
+            </svg>
+            <h3>Job Application Automation</h3>
+          </div>
+          <p class="project-meta">Zapply · Oct 2025 — Jul 2026</p>
+          <p>An LLM-assisted job application tool: reads a job posting and the candidate's profile, then auto-fills application forms with tailored answers, cutting repetitive form-filling out of the job search.</p>
+          <ul class="chips mono">
+            <li>TypeScript</li><li>React</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>LLM APIs</li>
+          </ul>
+          <details class="notes">
+            <summary>Build notes</summary>
+            <div class="note"><h4>Challenge</h4><p>Every job posting phrases the same questions differently, and every form has its own field layout — a naive autofill breaks the moment the form deviates from the last one it saw.</p></div>
+            <div class="note"><h4>Approach</h4><p>Own the feature end to end: an LLM reads the posting and the candidate's profile to produce tailored answers, which are then mapped onto the target form's actual fields rather than a fixed template — with the client, API and data layer built in TypeScript throughout.</p></div>
+            <div class="note"><h4>Result</h4><p>Repetitive form-filling removed from the job search, with answers tailored per posting instead of copy-pasted.</p></div>
+          </details>
+        </article>
+
+        <article class="card project">
+          <div class="project-head">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
+            </svg>
+            <h3>SIEM Platform Integrations</h3>
+          </div>
+          <p class="project-meta">YottaByte / Calian · May 2022 — Sept 2025</p>
+          <p>Backend services and integrations powering a SIEM platform: connecting third-party systems and cloud APIs, and moving data through asynchronous pipelines reliably at scale.</p>
+          <ul class="chips mono">
+            <li>Python</li><li>FastAPI</li><li>Django</li><li>Node.js</li><li>Celery</li><li>Redis</li><li>Kafka</li><li>PostgreSQL</li><li>Docker</li><li>Kubernetes</li>
+          </ul>
+          <details class="notes">
+            <summary>Build notes</summary>
+            <div class="note"><h4>Challenge</h4><p>Security data arrives from many third-party systems on their own schedules and formats — the platform needed to ingest it reliably without one slow or flaky source stalling the rest.</p></div>
+            <div class="note"><h4>Approach</h4><p>Designed and maintained REST APIs and server-side services in Python (FastAPI, Django) and Node.js, with Celery, Redis and Kafka handling asynchronous processing so ingestion stayed decoupled from downstream load. Data modelling and query optimisation spanned PostgreSQL, SQL Server and MongoDB, deployed through Docker and Kubernetes with CI/CD.</p></div>
+            <div class="note"><h4>Result</h4><p>Reliable, scalable integrations running in production, with performance issues caught and tuned through profiling rather than after the fact.</p></div>
           </details>
         </article>
 
@@ -283,10 +341,10 @@
       <ol class="timeline">
 
         <li class="tl-row">
-          <div class="tl-date">Sept 2025 — Present</div>
+          <div class="tl-date">Oct 2025 — Jul 2026</div>
           <div class="tl-role">
             <h3>Full Stack Engineer</h3>
-            <p>Zapply — United States (Remote)</p>
+            <p>Zapply — United States (Remote) · Full-time</p>
           </div>
           <div class="tl-body">
             <p>Own features across client, server, service and database in TypeScript, React, Node.js and Express — function-based components, hooks and tests on the front end; REST APIs, data models and business logic on the back.</p>
